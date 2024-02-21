@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{int num,remainder,sum=0;
+	printf("enter any number");
+	scanf("%d",&num);
+	int p=num;
+	while(num>0)
+	{
+		remainder=num%10;
+		sum=sum*10+remainder;
+		num=num/10;
+	}
+	if(p==sum)
+	{
+		printf("palindrome number");
+	}
+	else
+	{
+		printf("not palindrome number");
+	}
+}
